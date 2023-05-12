@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#root {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 5%;
+}
+
+.animeList {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+
+.singleAnime h1 {
+    font-size: 0.8rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+}
+
+.singleAnime h4 {
+    font-size: 0.7rem;
+    color: #353535;
+}
+
+.singleAnime img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.searchBar {
+    width: 100%;
+    margin: 2rem 0;
+}
+.searchBar form {
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    background: #000;
+    border-radius: 0.5rem;
+}
+.form::placeholder {
+    color: #757575;
+}
+
+.searchBar input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+}
+
