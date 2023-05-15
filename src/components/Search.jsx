@@ -11,7 +11,7 @@ function Search() {
         e.preventDefault()
         console.log("Are you looking for", text)
         setText('')
-        navigate('/Results/'+text)
+        navigate('/results/'+text)
     }
 
     return (
